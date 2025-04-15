@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All-in-One CSS Example</title>
+  <style>
+ 
+    .transparent-box {
+      width: 200%;
+      height: 200px;
+      background-color: #ff5733;
+      opacity: 0.5; /* 50% transparent */
+      margin-bottom: 30px;
+    }
+
+   
+    .viewport-box {
+      width: 50vw;  /* 50% of the viewport width */
+      height: 30vh; /* 30% of the viewport height */
+      background-color: #3498db;
+      margin-bottom: 30px;
+    }
+
+    .important-rule {
+      font-size: 20px;
+      color: green !important; 
+      margin-bottom: 30px;
+    }
+
+    /* CSS Masking */
+    .masked-box {
+      width: 300px;
+      height: 300px;
+      background-color: #e74c3c;
+      mask-image: url('https://www.example.com/mask.png'); 
+      mask-size: cover;
+      -webkit-mask-image: url('https://www.example.com/mask.png'); 
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="important-rule">This is a heading with the !important rule applied</h1>
+
+  <div class="transparent-box">
+    This box has 50% opacity.
+  </div>
+
+  <div class="viewport-box">
+    This box uses viewport units (50% width and 30% height of the viewport).
+  </div>
+
+  <div class="masked-box">
+    This box has a mask applied (replace the URL with a valid mask image).
+  </div>
+
+</body>
+</html>

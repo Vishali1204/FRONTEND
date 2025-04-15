@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Styles</title>
+    <style>
+        /* Basic Button Style */
+        .btn {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text color */
+            padding: 14px 20px; /* Padding around the text */
+            border: none; /* No border */
+            border-radius: 5px; /* Slightly rounded corners */
+            text-align: center; /* Center the text inside the button */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Make the button inline */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth transition for background */
+        }
+
+        /* Hover State */
+        .btn:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        /* Active State */
+        .btn:active {
+            background-color: #388e3c; /* Even darker green on button click */
+            box-shadow: 0 5px #666, 0 -2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow effect on click */
+            transform: translateY(4px); /* Moves the button slightly down */
+        }
+
+        /* Disabled State */
+        .btn:disabled {
+            background-color: #cccccc; /* Gray background for disabled state */
+            color: #666666; /* Darker gray text */
+            cursor: not-allowed; /* Not-allowed cursor for disabled state */
+        }
+
+        /* Button with different color variations */
+        .btn-primary {
+            background-color: #007bff; /* Blue background */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .btn-danger {
+            background-color: #dc3545; /* Red background */
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+
+        .btn-warning {
+            background-color: #ffc107; /* Yellow background */
+            color: #212529; /* Dark text color for contrast */
+        }
+
+        .btn-warning:hover {
+            background-color: #e0a800; /* Darker yellow on hover */
+        }
+
+        /* Button with icon */
+        .btn-icon {
+            display: flex;
+            align-items: center; /* Center the icon vertically */
+            gap: 10px; /* Add space between icon and text */
+        }
+
+        /* Style for icons (using font-awesome or similar) */
+        .btn-icon i {
+            font-size: 20px; /* Icon size */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Basic Button -->
+    <button class="btn">Click Me!</button>
+
+    <!-- Primary Button -->
+    <button class="btn btn-primary">Primary Button</button>
+
+    <!-- Danger Button -->
+    <button class="btn btn-danger">Danger Button</button>
+
+    <!-- Warning Button -->
+    <button class="btn btn-warning">Warning Button</button>
+
+    <!-- Disabled Button -->
+    <button class="btn" disabled>Disabled Button</button>
+
+    <!-- Button with Icon -->
+    <button class="btn btn-primary btn-icon">
+        <i class="fa fa-check"></i> Icon Button
+    </button>
+
+</body>
+</html>

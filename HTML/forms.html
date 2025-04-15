@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <center><h1><b>Loan Application</b></h1></center>
+    </header>
+    <br>
+    <h3 style="background-color: aquamarine;"><center>Applicant Information:</center></h3>
+    
+    <form>
+        <label>First Name:</label>
+        <input type="text" name="first_name" value="John"><br><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="last_name" value="Smith"><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" value="john.smith@example.com"><br><br>
+
+        <label>Social Security #:</label>
+        <input type="text" name="ssn" value="123-45-6789"><br><br>
+
+        <label>Daytime Phone:</label>
+        <input type="text" name="day_phone" value="2039299400"><br><br>
+
+        <label>Evening Phone:</label>
+        <input type="text" name="eve_phone" value="2035551212"><br><br>
+
+        <h3 style="background-color: aquamarine;"><center>Loan Information:</center></h3>
+
+        <label>Loan Type:</label>
+        <select name="loan_type">
+            <option value="automobile" selected> Automobile</option>
+            <option value="home">Home</option>
+            <option value="personal">Personal</option>
+        </select><br><br>
+
+        <label>Loan Amount$:</label>
+        <input type="text" name="loan_amount" value="15000"><br><br>
+
+        <label>Description:</label><br>
+        <textarea name="description" rows="4" cols="40">Application to finance the purchase of a Toyota Prius.</textarea><br><br>
+
+        <input type="submit" value="Apply For Loan">
+    </form>
+</body>
+</html>

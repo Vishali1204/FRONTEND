@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table with Separate Borders</title>
+    <style>
+        /* Styling the entire table */
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border: 2px solid #333; /* Outer border of the table */
+            border-radius: 8px; /* Slight rounding for the table corners */
+            border-spacing: 0; /* Prevents spacing between cells */
+            background-color: #fff; /* White background for the table */
+        }
+
+        /* Styling the table headers */
+        th {
+            background-color: Blue; /* Green background */
+            color: white; /* White text */
+            padding: 12px 20px; /* Padding for headers */
+            text-align: left; /* Align text to the left */
+            font-size: 16px; /* Font size for headers */
+            border: 1px solid #ddd; /* Light border around header cells */
+        }
+
+        /* Styling the table rows */
+        td {
+            padding: 12px 20px; /* Padding inside table cells */
+            text-align: left; /* Left-aligning text in cells */
+            border: 1px solid #ddd; /* Light border around data cells */
+        }
+
+        /* Adding alternating row colors for better readability */
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray background for even rows */
+        }
+
+        tr:hover {
+            background-color: #e0f7fa; /* Light blue background when hovering over a row */
+            cursor: pointer; /* Pointer cursor when hovering */
+        }
+
+        /* Adding bold borders around rows for a separated effect */
+        tr {
+            
+            border-bottom: 2px solid #ddd; /* Bold bottom border for each row */
+        }
+
+        /* Table and content responsiveness */
+        @media (max-width: 768px) {
+            table {
+                width: 100%; /* Full width on smaller screens */
+                font-size: 14px; /* Slightly smaller text for smaller devices */
+            }
+
+            th, td {
+                padding: 10px 15px; /* Adjusted padding for smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Styled Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Anna Smith</td>
+                <td>25</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Emma Brown</td>
+                <td>27</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>James Wilson</td>
+                <td>35</td>
+                <td>Australia</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

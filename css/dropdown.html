@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Navbar styles */
+    ul.navbar {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    ul.navbar li {
+      display: inline;
+      position: relative;
+    }
+
+    ul.navbar li a {
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    ul.navbar li a:hover {
+      background-color: #575757;
+    }
+
+    /* Dropdown styles */
+    ul.navbar li ul.dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      min-width: 160px;
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.navbar li:hover > ul.dropdown {
+      display: block;
+    }
+
+    ul.navbar li ul.dropdown li a {
+      padding: 10px;
+    }
+
+    ul.navbar li ul.dropdown li a:hover {
+      background-color: #575757;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li>
+      <a href="#">Services</a>
+      <ul class="dropdown">
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">App Development</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <h2>Dropdown Menu</h2>
+  <p>This is an example of a dropdown menu inside a navigation bar.</p>
+
+</body>
+</html>

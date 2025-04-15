@@ -1,0 +1,27 @@
+div{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+}
+
+#first{
+    color: red;
+}
+
+.one{
+    color: blue;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p,h3{
+    display: noness;
+}
+
+/* 
+
+<!--
+-->
+*/

@@ -1,0 +1,88 @@
+p{
+    color: red;
+}
+
+
+#one{
+    color: yellowgreen;
+}
+
+#two{
+    color: rgb(67,135,200);/* 0-255 */
+}
+
+#three{
+    color: #b569e7;
+}
+
+#four
+{
+    color: rgba(189, 23, 255, 0.6);
+}
+
+
+body{
+   /*
+    background-color: palevioletred;
+    background-image:url('./img1.jpg') ;
+    background-repeat: no-repeat;
+    /*background-size:cover;*/
+    /* background-attachment:fixed; */
+    /*background-position:left; 
+    /* background: url('./img1.jpg') no-repeat palevioletred center; */
+}
+
+div{
+    width: 500px;
+    height: 500px;
+    background-image: url(img5.jpg);
+    background-attachment:scroll;
+    overflow-y: scroll; 
+    overflow-x: scroll;
+} 
+
+
+div{
+    /*
+    height: 500px;
+    width: 500px;
+    border: 2px;
+    border: color: #fff;
+    border-style:dotted;
+    border-width: 5px; 
+    */
+    /*
+ border: 2px solid red;
+ border-radius: 10px;
+ box-shadow: 20px 20px 10px 5px blue;
+ box-shadow: 20px 20px 10px 5px rgb(245, 187, 80) ,-20px -20px 10px 5px blue;   
+ */
+}
+
+div{
+  /*  
+    border: 5px solid green;
+    padding: 0px; 
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+
+    margin: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    */
+    /*
+    height: 400px;
+    width: 400px;
+    float:left;
+    */
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-decoration:wavy color(srgb green blue); 
+    line-height: 50px;
+      
+}
